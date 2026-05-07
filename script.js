@@ -19,7 +19,7 @@
 
   for (var i = 1; i <= TOTAL; i++) {
     var img = new Image();
-    img.src = "resource/ezgif-frame-" + String(i).padStart(3, "0") + ".jpg";
+    img.src = "/resource/ezgif-frame-" + String(i).padStart(3, "0") + ".jpg";
     img.onload = function () {
       loaded++;
       if (loaded === TOTAL) { draw(0); onScroll(); }
